@@ -1,5 +1,5 @@
 <h1>ResumePlus</h1>
-<h2>Fall semester software engineering capstone project. </h2>
+<i>Fall semester software engineering capstone project. </i>
 
 Resume plus is a site that allows users to create, edit, and share unique resumes created in html challenging the traditional way of creating a resume.
 
