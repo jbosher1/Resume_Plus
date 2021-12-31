@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--Head Section-->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>ResumePlus Profile</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "../static/styles/ResumePlusStylesheet.css">
+        <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    </head>
+
+    <!--Body Section-->
+    <body id = "profile-page-body">
+        
+       <!--Header Section-->
+       <header id = "home-header" class = "profile-header">
+
+            <!--Logo and Title Section-->
+            <div id = "top-wrapper">
+            
+                <!--Resume+ Logo-->
+                <div id = "circle-logo"></div>
+
+                <!--Title-->
+                <h1 id = "title"><a href = "{{url_for('home_page')}}">Resume+</a></h1>
+
+                <!--Search bar-->
+                <div class = "search">
+                    <input type = "text" placeholder = "Search" id = "search-bar">
+                </div>
+
+                <!--NavBar-->
+                <nav class = "navbar-wrapper">
+                    <ul>
+                        <li><a href = "{{url_for('about')}}">About</a></li>
+                        <li><a href = "">Messages</a></li>
+                        <li><a href = "{{ url_for('support') }}">Support</a></li>
+                        <li><a href = "{{ url_for('database') }}">Database</a></li>
+                    </ul>
+            
+                    <!--Dropdown button-->
+                    <div class = "dropdown-container dropdown">
+
+                        <!--Button for dropdown-->
+                        <button class = "edit-button dropbtn">Account</button>
+
+                            <!--Dropdown Menu-->
+                            <div class = "dropdown-content">
+                                <a href = "{{ url_for('profile') }}" class = "dropdown-menu">Profile</a>
+                                <a href = "{{ url_for('settings') }}" class = "dropdown-menu">Setting</a>
+                                <a href = "{{ url_for('logout') }}" class = "dropdown-menu">Log Out</a>
+                            </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!--Main Section-->
+        <main id = "profile-main"> 
+            
+            <!--Profile image, name, job title, and message button-->
+            <section id = "profile-information">
+
+                <!--Profile Top Wrapper-->
+                <div class = "profile-wrapper">
+                    
+                    <!--Profile Image-->
+                    <div id = "profile-image">
+                        <img src = "../static/image/profile.jpg">
+                    </div>
+
+                    <!--User profile information-->
+                    <div id = "profile-info">
+
+                        <!--User Name-->
+                        <h1>{{ user.fname }}{{" "}}{{ user.lname }}</h1>
+
+                        <!--User job title position-->
+                        <div class = "job-title">
+                            <p>Job Title</p>
+                        </div>  
+                        
+                        <!--Message button-->
+                        <div id = "message-button">
+                            <button class = "button-message">Message</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--User Information-->
+            <section id = "user-information">
+
+                <!--Contact container-->
+                <div class = "contact-container">
+
+                    <!--Heading-->
+                    <h1>Contact</h1>
+
+                    <!--Create solid line-->
+                    <div class = "profile-solid"></div>
+
+                    <!--Icon wrapper-->
+                    <div class = "icon-wrapper">
+
+                        <!--Icons for contact-->
+                        <div class = "icons">
+
+                            {% if user %}
+                                <!--Contact info-->
+                                <p><i class = "far fa-envelope"></i>{{ user.email }}</p>
+                                <p><i class = "fas fa-mobile-alt"></i>{{ user.phoneNumber }}</p>
+                                <p><i class = "fas fa-map-marker-alt"></i>{{ user.address }}</p>
+                                <p>{{user.city}}{{", "}}{{ user.state }}{{", "}}{{ user.zip }}{{", "}}{{ user.country }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <!--About user container-->
+                <div class = "about-me-container">
+
+                    <!--Heading-->
+                    <h1>About Me</h1>
+
+                    <!--Create solid line-->
+                    <div class = "profile-solid"></div>
+
+                    <!--User about me paragraph-->
+                    <p id = "user-paragraph">
+                        {% if user.about %}
+                            <section class="summary">
+                                <h3>About Me</h3>
+                                <ul>
+                                    <p>{{user.about}}</p>
+                                </ul>
+                            </section>
+                        {% endif %}
+                    </p>
+                </div>
+
+                <!--Social media container-->
+                <div class = "searches-container">
+
+                    <!--Heading-->
+                    <h1>Other also viewed</h1>
+
+                    <!--Create solid line-->
+                    <div class = "profile-solid"></div>
+
+                    <!--Most viewed user-->
+                    <div class = "other-user">
+
+                        <!--User-->
+                        <div class = "user-list">
+
+                            <!--Image-->
+                            <img src = "../static/image/profile.jpg" class = "user-img">
+
+                            <!--User Name and Job Title-->
+                            <div class = "user-profile">
+                                <h4 id = "name">Name</h4>
+                                <p id = "job">Job Title</p>
+                            </div>
+                        </div>
+
+                        <!--User-->
+                        <div class = "user-list">
+
+                            <!--Image-->
+                            <img src = "../static/image/profile.jpg" class = "user-img">
+
+                            <!--User Name and Job Title-->
+                            <div class = "user-profile">
+                                <h4 id = "name">Name</h4>
+                                <p id = "job">Job Title</p>
+                            </div>
+                        </div>
+
+                        <!--User-->
+                        <div class = "user-list">
+
+                            <!--Image-->
+                            <img src = "../static/image/profile.jpg" class = "user-img">
+
+                            <!--User Name and Job Title-->
+                            <div class = "user-profile">
+                                <h4 id = "name">Name</h4>
+                                <p id = "job">Job Title</p>
+                            </div>
+                        </div>
+
+                        <!--User-->
+                        <div class = "user-list">
+
+                            <!--Image-->
+                            <img src = "../static/image/profile.jpg" class = "user-img">
+
+                            <!--User Name and Job Title-->
+                            <div class = "user-profile">
+                                <h4 id = "name">Name</h4>
+                                <p id = "job">Job Title</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Solid Line-->
+                    <div class = "profile-solid" id = "profile-solid"></div>
+
+                    <!--Show more button-->
+                    <div id = "show-more-button">
+                        <button>Show More</button>
+                    </div>
+                </div>
+
+                <!--About user container-->
+                <div class = "education-container">
+
+                    <!--Heading-->
+                    <h1>Education</h1>
+
+                    <!--Create solid line-->
+                    <div class = "profile-solid"></div>
+
+                    <div id = "education-content">
+                        <!--User about me paragraph-->
+                        <!-- <p id = "degree-major">Degree, Major, Minor</p> -->
+                        <!--User school name-->
+                        <!-- <p id = "school-name">University Name | Start Time - End Time</p> -->
+                        <!--User GPA-->
+                        <!-- <p id = "gpa">GPA: </p> -->
+                        {% if sections %}
+                            {% for i, section in enumerate(sections) %}
+                                {% if section.name == 'education' %}
+                                        {% if i == 0 %}
+                                            <section class="education">
+                                                <h3>Education</h3>
+                                                <ol>
+                                        {% endif %}
+                                                    <li>
+                                                        <div>
+                                                            <p class="sanserif">{{dict(zip(section.caption.split("\n"), section.info.split("\n")))['education-level'], dict(zip(section.caption.split("\n"), section.info.split("\n")))['major']}}</p>
+                                                            <time>{{dict(zip(section.caption.split("\n"), section.info.split("\n")))['start-time']}}-{{dict(zip(section.caption.split("\n"), section.info.split("\n")))['end-time']}}</time>
+                                                        </div>
+                                                        <div>
+                                                            <span>{{dict(zip(section.caption.split("\n"), section.info.split("\n")))['school-name']}}</span>
+                                                            <span>{{dict(zip(section.caption.split("\n"), section.info.split("\n")))['c-gpa']}}</span>
+                                                        </div>
+                                                    </li>
+                                        {% if i == len(sections) - 1 %}
+                                                </ol>
+                                            </section>
+                                        {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!--User Job Experience or Volunteer work-->
+                <div class = "skill-container">
+                    {% if sections %}
+                        {% for i, section in enumerate(sections) %}
+                            {% if section.name == 'skills' %}
+                                {% if i == 0 %}
+                                    <section class="education">
+                                    <h3>Skills</h3>
+                                    <ol>
+                                {% endif %}
+                                <section class="skills">
+                                    <h3>Technologies</h3>
+                                    <ul>
+                                        {% for line in section.info.split("\n") %}
+                                            <li><span>{{line}}</span></li>
+                                        {% endfor %}
+                                    </ul>
+                                </section>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+
+                <!--User Job Experience or Volunteer work-->
+                <div class = "job-container">
+                    {% if sections %}
+                        {% for i, section in enumerate(sections) %}
+                                {% if i == 0 %}
+                                    <section class="experience">
+                                    <h3>Experience</h3>
+                                    <ol>
+                                {% endif %}
+                            {% if section.name == 'experience'  or section.name == 'work' %}
+                                            <li>
+                                                <header>
+                                                    <p class="sanserif">{{dict(zip(section.caption.split("\n"), section.info.split("\n")))['job-title']}}</p>
+                                                    <time>{{dict(zip(section.caption.split("\n"), section.info.split("\n")))['start-time']}}-{{dict(zip(section.caption.split("\n"), section.info.split("\n")))['end-time']}}</time>
+                                                </header>
+                                                <span>{{dict(zip(section.caption.split("\n"), section.info.split("\n")))['employer']}}</span>
+                                                <ul>
+                                                    <li>{{dict(zip(section.caption.split("\n"), section.info.split("\n")))['description']}}</li>
+                                                </ul>
+                                            </li>
+                                {% if i == len(sections) - 1 %}
+                                        </ol>
+                                    </section>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+
+                <!--User license and certification-->
+                <div class = "certification-container">
+
+                      <!--Heading-->
+                      <h1>License & Certification</h1>
+
+                      <!--Create solid line-->
+                      <div class = "profile-solid"></div>
+
+                      <!--User about me paragraph-->
+                      <p id = "award">Certification Name</p>
+
+                      <!--User school name-->
+                      <p id = "company">Issue Company/Website | Start Time - End Time</p>
+
+                      <p id = "issue-date">Issue Date</p>
+                </div>
+
+                <!--User accomplishment container-->
+                <div class = "accomplishment-container">
+
+                    <!--Heading-->
+                    <h1>Accomplishment</h1>
+
+                    <!--Create solid line-->
+                    <div class = "profile-solid"></div>
+
+                    <!--List of user courses-->
+                    <p id = "course"># Courses</p>
+
+                    <!--Course List-->
+                    <p id = "course-list">Software Engineering, Data Structures and Algorithms</p>
+
+                    <!--List of user lanaguages-->
+                    <p id = "languages"># Lanaguages</p>
+
+                    <!--Lanaguge list-->
+                    <p id = "language-list">English, Spanish</p>
+                </div>
+            </section>
+        </main>
+
+        <!--Footer Section-->
+        <footer id = "footer" class = "profile-footer">
+
+            <!--About Section of ResumePlus-->
+            <div id = "about">
+                <h2>Resume+</h2>
+                <p>Creating opportunities by allowing your true worth show.</p>
+            </div>
+
+            <!--Explore ResumePlus-->
+            <div id = "explore">
+
+                <!--Heading-->
+                <h3 class = "footer-heading">Explore</h3>
+
+                <!--Links to other pages in ResumePlus-->
+                <div id = "explore-links">
+                    <a href = "Home.html">Home</a><br>
+                    <br><a href = "#">About</a><br>
+                    <br><a href = "#">Support</a>
+                </div>
+            </div>
+
+            <!--Visit ReumePlus-->
+            <div id = "visit">
+
+                <!--Heading-->
+                <h3>Visit</h3>
+
+                <!--ResumePlus location-->
+                <p>University of North Carolina Charlotte</p>
+                <p>9201 University City Blvd</p>
+                <p>Charlotte, NC, 28223</p>
+            </div>
+
+            <!--Contact ResumePlus-->
+            <div id = "contact">
+
+                <!--Heading-->
+                <h3>Contact</h3>
+
+                <!--ResumePlus contact informtion-->
+                <p>resumeplus@gmail.com</p>
+                <p>704-123-123</p>
+            </div>
+
+            <!--Legal-->
+            <div id = "legal">
+
+                <!--Heading-->
+                <h3>Legal</h3>
+
+                <!--Links to Terms and Privacy-->
+                <a href = "#">Terms</a><br>
+                <br><a href = "#">Privacy</a>
+            </div>
+        </footer>
+    </body>
+</html>

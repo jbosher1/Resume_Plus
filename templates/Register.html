@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--Head Section-->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>ResumePlus SignUp</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "../static/styles/ResumePlusStylesheet.css">
+    </head>
+
+    <!--Body Section-->
+    <body class = "register-body">
+
+        <!--Header Section-->
+        <header id = "register-header">
+
+            <!--Logo and Title Section-->
+            <div id = "top-wrapper">
+
+                <!--Resume+ Logo-->
+                <div id = "circle-logo"></div>
+
+                <!--Title-->
+                <h1 id = "title"><a href = "{{url_for('home_page')}}">Resume+</a></h1>
+
+                <!--Search bar-->
+                <div class = "search">
+                    <input type = "text" placeholder = "Search" id = "search-bar">
+                </div>
+
+                <!--NavBar-->
+                <nav class = "navbar-wrapper">
+                    <ul>
+                        <li><a href = "{{url_for('about')}}">About</a></li>
+                        <li><a href = "">Messages</a></li>
+                        <li><a href = "{{ url_for('support') }}">Support</a></li>
+                        <li><a href = "{{ url_for('database') }}">Database</a></li>
+                    </ul>
+
+                    {% if user %}
+                        <!--Dropdown button-->
+                        <div class = "dropdown-container dropdown">
+
+                            <!--Button for dropdown-->
+                            <button class = "edit-button dropbtn">Account</button>
+
+                                <!--Dropdown Menu-->
+                                <div class = "dropdown-content">
+                                    <a href = "{{ url_for('profile') }}" class = "dropdown-menu">Profile</a>
+                                    <a href = "{{ url_for('settings') }}" class = "dropdown-menu">Setting</a>
+                                    <a href = "{{ url_for('logout') }}" class = "dropdown-menu">Log Out</a>
+                                </div>
+                        </div>            
+                    {% else %}
+                        <div class = "dropdown-container dropdown" id = "user-button">
+                            <a href = "{{ url_for('login') }}"><button class = "sign-button" id = "signin-button">Sign In</button></a>
+                            <a href = "{{ url_for('register') }}"><button class = "sign-button">Sign Up</button></a>
+                        </div>
+                    {% endif %}
+                </nav>
+            </div>
+        </header>
+
+        <!--Main Section-->
+        <main class = "register-main">
+
+            <!--Input for user to receive newsletter and contacting us-->
+            <div class = "form-wrapper2">
+                <form id = "form3" aria-labelledby = "form" method = "POST" action = "/register">
+
+                    <!--Header for Contacting Us-->
+                    <div class = "signUp-header">
+                        <h1 id = "signup-title">Sign Up</h1>
+
+                        <!--Circle Logo below Sign Up-->
+                        <div id = "circle-logo3">
+                            <div class = "dots2"></div>
+                            <div class = "dots2"></div>
+                            <div class = "dots2"></div>
+                        </div>
+
+                        <!--Message to fill out the form-->
+                        <p>Please fill out the form below</p>
+                    </div>
+
+                    <!--Information Input-->
+                    <div class = "form-control2">
+
+                        <!--First Name Input-->
+                        <span id = "inputForm">
+                            <input type = "text" name = "fname" id = "fname" placeholder = "First Name" aria-required = "true">
+                        </span>
+
+                        <!--Last Name Input-->
+                        <span id = "inputForm">
+                            <input type = "text" name = "lname" id = "lname" placeholder = "Last Name" aria-required = "true">
+                        </span>
+
+                        <!--Username Input-->
+                        <span id = "inputForm">
+                            <input type = "text" name = "username" id = "username" placeholder = "Username" aria-required = "true">
+                        </span>
+
+                        <!--Email Input-->
+                        <span id = "inputForm">
+                            <input type = "text" name = "email" id = "email" placeholder = "Email" aria-required = "true">
+                        </span>
+
+                        <!--Password Input-->
+                        <span id = "inputForm">
+                            <input type = "password" name = "password" id = "password" placeholder = "Password" aria-required = "true">
+                        </span>
+
+                        <!--Confirm Password-->
+                        <span id = "inputForm">
+                            <input type = "password" name = "confirm-password" id = "confirm-password" placeholder = "Confirm Password" aria-required = "true">
+                        </span>
+                    </div>
+
+                    <!--User have the option to receive weekly updates-->
+                    <div class = "checkbox-form">
+
+                        <!--Checkbox for weekly updates-->
+                        <input type = "checkbox" id = "newsletter" required>
+                        <label for = "newsletter">I accept the Term of Use & Privacy Policy</label>
+                    </div>
+
+                    <!--Submit Button-->
+                    <div class = "signup-wrapper">
+                        <button type = "submit" form = "form3" value = "Submit" id = "signup">Sign Up</button>
+                    </div>
+                </form>
+
+                <!--Direct user to sign in if they already have account-->
+                <div id = "direct-to-login">
+                    <p>Already have a account? <a href = " {{ url_for('login') }} ">Sign In</a></p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

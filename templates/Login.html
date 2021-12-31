@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--Head Section-->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>ResumePlus Sign In</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "../static/styles/ResumePlusStylesheet.css">
+    </head>
+
+    <!--Body Section-->
+    <body class = "login-body">
+
+        <!--Header Section-->
+        <header id = "login-header">
+
+            <!--Logo and Title Section-->
+            <div id = "top-wrapper">
+
+                <!--Resume+ Logo-->
+                <div id = "circle-logo"></div>
+
+                <!--Title-->
+                <h1 id = "title"><a href = "{{url_for('home_page')}}">Resume+</a></h1>
+
+                <!--Search bar-->
+                <div class = "search">
+                    <input type = "text" placeholder = "Search" id = "search-bar">
+                </div>
+
+                <!--NavBar-->
+                <nav class = "navbar-wrapper">
+                    <ul>
+                        <li><a href = "{{url_for('about')}}">About</a></li>
+                        <li><a href = "">Messages</a></li>
+                        <li><a href = "{{ url_for('support') }}">Support</a></li>
+                        <li><a href = "{{ url_for('database') }}">Database</a></li>
+                    </ul>
+
+                    {% if user %}
+                        <!--Dropdown button-->
+                        <div class = "dropdown-container dropdown">
+
+                            <!--Button for dropdown-->
+                            <button class = "edit-button dropbtn">Account</button>
+
+                                <!--Dropdown Menu-->
+                                <div class = "dropdown-content">
+                                    <a href = "{{ url_for('profile') }}" class = "dropdown-menu">Profile</a>
+                                    <a href = "{{ url_for('settings') }}" class = "dropdown-menu">Setting</a>
+                                    <a href = "{{ url_for('logout') }}" class = "dropdown-menu">Log Out</a>
+                                </div>
+                        </div>            
+                    {% else %}
+                        <div class = "dropdown-container dropdown" id = "user-button">
+                            <a href = "{{ url_for('login') }}"><button class = "sign-button" id = "signin-button">Sign In</button></a>
+                            <a href = "{{ url_for('register') }}"><button class = "sign-button">Sign Up</button></a>
+                        </div>
+                    {% endif %}
+                </nav>
+            </div>
+        </header>
+
+        <!--Main Section-->
+        <main class = "login-main">
+
+            <!--Input for user to receive newsletter and contacting us-->
+            <div class = "form-wrapper">
+
+                <!--Form to sign in-->
+                <div class = "form">
+                    <form id = "form" aria-labelledby = "form" method = "POST" action = "/login">
+
+                        <!--Header for Contacting Us-->
+                        <div class = "signIn-header">
+                            <h1>Sign In</h1>
+                        </div>
+
+                        <!--Circle logo under signup-->
+                        <div id = "circle-logo2">
+                            <div class = "dots"></div>
+                            <div class = "dots"></div>
+                            <div class = "dots"></div>
+                        </div>
+
+                        <!--Information Input-->
+                        <div class = "form-control">
+
+                            <!--Username Input-->
+                            <label >Username</label>
+                            <input type = "text" name = "username" id = "username" placeholder = "Enter Email/Username" aria-required = "true"><br>
+
+                            <!--Password Input-->
+                            <label>Password</label>
+                            <input type = "password" name = "password" id = "Password" placeholder = "Enter Password">
+
+                            <div id = "forgot-content">
+                                <a id = "forgot-account" href = ""><label>Forgot your username/password</label></a>
+                            </div>
+                        </div>
+
+                        <!--Login Button-->
+                        <div class = "signin-wrapper">
+                            <button type = "submit" form = "form" value = "Submit" id = "signin">Login</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!--Direct user to sign up if they haven't already-->
+                <div class = "direct-signup">
+                    <div id = "form2" class = "form2">
+
+                        <!--Message to new user-->
+                        <div id = "direct-to-signup">
+                            <h1>Come Sign Up!</h1>
+                            <p>Enter your details and let yourself be known!</p>
+                        </div>
+
+                        <!--SignUp Button-->
+                        <div class = "signup-wrapper">
+                            <a href = "{{ url_for('register')}}"><button id = "signup">Sign Up</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

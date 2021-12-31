@@ -1,0 +1,2931 @@
+/************************** Landing Page *************************/
+
+/* Style body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+/* Style top bar */
+#top-wrapper {
+    display: flex;
+}
+
+/* Style logo */
+#circle-logo {
+    border-radius: 50%;
+    background-color: #3982FA;
+    width: 45px;
+    height: 45px;
+    margin: 15px 15px;
+}
+
+/* Style the title of website */
+#title {
+    color: white;
+}
+
+/* Style button */
+#user-button {
+    display: inline-block;
+    position: absolute;
+    right: 60px;
+    padding-top: 5px;
+    padding-right: 15px;
+}
+
+.sign-button {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100px;
+    background-color: #3982FA;
+    color: white;
+    border-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Style message button */
+#message {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+
+.signIn-button {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    color: #3982FA;
+    border-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Top of landing page */
+.top {
+    background-color: #3982FA;
+    color: white;
+    text-align: center;
+    padding: 8%;
+    font-family: Arial;
+}
+.top h1 {
+    font-size: 50px;
+}
+
+.top h3 {
+    font-size: 25px;
+}
+/* changes color of words under dots and removed line under link */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* small links to bring you to different areas of landing page */
+#con {
+   display: inline-block;
+   width: auto;
+   height: 10%;
+   padding: 2% 9.5% 2%;
+   text-align: center;
+   font-family: Arial;
+}
+
+#dis {
+   display: inline-block;
+   width: auto;
+   height: 10%;
+   padding: 2% 9.5% 2%;
+   text-align: center;
+   font-family: Arial;
+}
+
+#cre {
+   display: inline-block;
+   width: auto;
+   height: 10%;
+   padding: 2% 9.5% 2%;
+   text-align: center;
+   font-family: Arial;
+}
+
+#enh {
+   display: inline-block;
+   width: auto;
+   height: 10%;
+   padding: 2% 9.5% 2%;
+   text-align: center;
+   font-family: Arial;
+}
+
+/* Bottom portion of landing page gray and white areas */
+#image {
+    width: 25%;
+    height: auto;
+    padding: 5% 9% 5%;
+}
+
+#connect {
+    background-color: #F2F2F2;
+    padding: 5%;
+}
+
+#conn-text {
+    float: right;
+    padding: 7% 11% 10%;
+    width: 25%;
+    font-family: Arial;
+}
+
+#conn-text h3{
+    color: #999999;
+}
+
+#display {
+    background-color: white;
+    padding: 5%;
+}
+
+#disp-text {
+    float: left;
+    padding: 7% 11% 10%;
+    width: 25%;
+    font-family: Arial;
+}
+
+#disp-text h3{
+    color: #999999;
+}
+
+#create {
+    background-color: #F2F2F2;
+    padding: 5%;
+}
+
+#crea-text {
+    float: right;
+    padding: 7% 11% 10%;
+    width: 25%;
+    font-family: Arial;
+}
+
+#crea-text h3{
+    color: #999999;
+}
+#enhance {
+    background-color: white;
+    padding: 5%;
+}
+
+#enha-text {
+    float: left;
+    padding: 7% 11% 10%;
+    width: 25%;
+    font-family: Arial;
+}
+
+#enha-text h3{
+    color: #999999;
+}
+
+#landing-page-body {
+    height: 100px;
+}
+
+/************************** Home Page *************************/
+
+/* Style background color in body*/
+#sign-in-body {
+    background-color: #3982FA;
+}
+
+/* Style header */
+#home-header {
+    border: 1px #C5C5C5 solid;
+    background-color: white;
+}
+
+/* Style logo */
+#logo {
+    width: 90px;
+    height: 90px;
+}
+
+/* Style the title of website */
+#title a {
+   color: black;
+}
+
+/* Style the navbar content*/
+.navbar-wrapper ul li {
+    list-style-type: none;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 25px;
+    padding-left: 50px;
+}
+
+/* Style the navbar list */
+.navbar-wrapper ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Style hover effect on navbar */
+.navbar-wrapper ul li a:hover {
+    color: #3982FA;
+}
+
+/* Style search bar */
+.search {
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+/* Style the search bar */
+#search-bar {
+    width: 250px;
+    height: 40px;
+    background-color: #D3D3D3;
+    border: 0.5px solid;
+    font-size: 12px;
+}
+
+/* Style Account Button */
+.dropdown-container {
+    display: inline-block;
+    position: absolute;
+    top: -45px;
+    left: 520px;
+    padding-top: 5px;
+    padding-right: 15px; 
+}
+
+/* Style dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown content a */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #F1F1F1;
+}
+
+/* Style the hover effect on dropdown menu */
+.dropdown-content a:hover {
+    background-color: #BEBEBE;
+}
+
+/* Style dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the edit button */
+.edit-button {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100px;
+    background-color: #3982FA;
+    color: white;
+    border-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Page Variables */
+
+:root {
+    --main-width: 74%;
+    --header-height: 1.2in;
+    --sidebar-width: calc(100% - var(--main-width));
+}
+
+body {
+    font-size: 0.95em;
+    margin: 0 auto;
+    padding-bottom: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+    text-decoration-skip: ink;
+    hyphens: auto;
+    position: relative;
+}
+
+#save > section:first-of-type {
+    display: flex;
+    flex-direction: row;
+}
+
+.summary {
+    font-size: 105%;
+}
+
+/* Misc */
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+abbr[title] {
+    text-decoration: none;
+    border: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li + li {
+    margin-top: 0.4em;
+}
+
+.fa, .fab {
+    text-align: center;
+    min-width: 1em;
+}
+
+li .fa, li .fab {
+    margin-right: 0.3em;
+}
+
+/* Page layout */
+
+#save > section:first-of-type > aside {
+    flex-basis: var(--sidebar-width);
+    padding: 0.1618in 0 0.1618in 0.1618in;
+    display: flex;
+    flex-direction: column;
+}
+
+#save > section:first-of-type > aside > section + section {
+    margin-top: 2em;
+}
+
+#save > section:first-of-type > aside > section:last-child {
+    margin-top: auto;
+}
+
+#save > section:first-of-type > section {
+    flex-basis: var(--main-width);
+    display: flex;
+    flex-direction: column;
+}
+
+#save > section:first-of-type > section > header {
+    flex-basis: var(--header-height);
+    flex-grow: 0;
+    padding: 0.1618in;
+}
+
+#save > section:first-of-type > section > section {
+    flex-grow: 1;
+    padding: 0.1618in;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#save > section:first-of-type > section > section > section + section {
+    margin-top: 1em;
+}
+
+#save > section:first-of-type > section > section > section:last-child {
+    margin-top: auto;
+}
+
+.references address {
+    font-style: normal;
+    font-weight: 300;
+}
+
+.references address:first-line {
+    font-weight: 400;
+}
+
+.references address + address,
+.references address + p {
+    padding-top: 0.5em;
+}
+
+/* Skills */
+
+.skills {
+    font-size: 92%;
+}
+
+.skills > ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.skills > ul > li {
+    display: block;
+    float: left;
+    margin: 6px 6px 0 0;
+}
+
+.skills > ul > li > span {
+    background-color: #f5f5f5;
+    border: 1px solid rgba(45, 45, 45, 0.1618);
+    border-radius: 3px;
+    color: #333;
+    padding: 4px 8px;
+    display: inline-block;
+}
+
+/* Experience & Education */
+
+.education ol,
+.experience ol {
+    margin: 0;
+    padding: 0;
+}
+
+.experience ol {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.experience ol > li {
+    margin: 0;
+    padding: 0;
+    flex-basis: 100%;
+    font-weight: 300;
+}
+
+.education ol > li {
+    font-weight: 300;
+}
+
+.experience ol > li + li {
+    margin-top: 1em;
+}
+
+.education ol > li div,
+.experience ol > li header {
+    display: flex;
+    flex-direction: row;
+}
+
+.experience ol > li > span,
+.education ol > li p,
+.experience ol > li header p {
+    font-weight: 400;
+}
+
+.experience ol > li header p {
+    font-size: 110%;
+}
+
+.education ol > li div > *:last-child,
+.experience ol > li header > *:last-child {
+    margin-left: auto;
+}
+
+.experience ol > li ul {
+    padding-top: 0.5em;
+}
+
+.experience ol > li ul li {
+    list-style-type: circle;
+    margin-left: 1.618em;
+}
+
+.sheet {
+    position: relative; 
+    left: 200px;
+    top: -800px;
+}
+
+@page { margin: 0 }
+body { margin: 0 }
+.sheet {
+  margin: 0;
+  margin-left: 20%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+/** Paper sizes **/
+body.letter           .sheet { width: 216mm; height: 279mm }
+body.letter.landscape .sheet { width: 280mm; height: 215mm }
+
+/** Padding area **/
+.sheet.padding-10mm { padding: 10mm }
+.sheet.padding-15mm { padding: 15mm }
+.sheet.padding-20mm { padding: 20mm }
+.sheet.padding-25mm { padding: 25mm }
+
+/** For screen preview **/
+@media screen {
+  body { background-color: #F2F2F2;}
+  .sheet {
+    background:  #ffffff;
+    box-shadow: 0 .5mm 2mm rgba(0,0,0,.5);
+    margin: 5mm auto;
+  }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+  body.letter, body.legal    { width: 216mm }
+  body.letter.landscape      { width: 280mm }
+}
+
+
+/* Style the Footer */
+#footer {
+    width: 100%;
+    height: 180px;
+    background-color: #3982FA;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    color: white;
+    /* bottom: 0; */
+    font-family: Arial;
+}
+
+/* Style the about page */
+#about h2 {
+    font-size: 18pt;
+    font-family: Arial;
+}
+
+/* Style the explore links */
+#explore-links a {
+    text-decoration: none;   
+    color: white;
+}
+
+/* Style hover effect */
+#explore-links a:hover {
+    color: #C4C4C4;
+}
+
+/* Style legal section */
+#legal a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style hover Effect */
+#legal a:hover {
+    color: #C4C4C4;
+}
+
+/* Style top nav and side nav bar */
+.bottom-nav {
+    background-color: #32425E;
+    height: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.bottom-nav a {
+    display: inline-block;
+}
+
+.bottom-nav-wrapper {
+    float: right; 
+}
+
+.top-button {
+    height: 30px;
+    font-size: 12px;
+    background-color: white;
+    border-style: none;
+    border-radius: 3px;
+    border-color: white;
+    padding: 0 10px;
+}
+
+#sidebar {
+    background-color: #32425E;
+    position: absolute;
+    left: 0;
+    height: 1444px;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.elements h3 {
+    font-weight: bold;
+    position: relative;
+    top: -15px;
+    font-family: Arial;
+}
+
+#template-logo, #text-logo, 
+#element-logo, #map-logo,
+#upload-logo, #more-logo {
+    width: 50px;
+}
+
+#map-logo {
+    height: 55px;
+}
+
+/* Style feature */
+.side-bar-elements {
+    position: relative; 
+    left: 140px;
+    width: 0px;
+    height: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #32425E;
+    float: left;  /* testing this */
+}
+
+/* Style template feature */
+.template-element, .text-element {
+    padding-left: 15px;
+}
+
+.template-element h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+#template-search {
+    width: 220px;
+}
+
+/* Style upload feature */
+.upload-element h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+}
+.video {
+   width: auto;
+   height: 10%;
+   padding: 8% 0% 2%;
+   text-align: left;
+   font-family: Arial;
+}
+.images{
+   width: auto;
+   height: 10%;
+   padding: 8% 0% 2%;
+   text-align: left;
+   font-family: Arial;
+}
+.recent{
+   width: auto;
+   height: 10%;
+   padding: 8% 0% 2%;
+   text-align: left;
+   font-family: Arial;
+}
+.upload-element h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 15px;
+    font-family: Arial;
+}
+
+
+/* Style more feature */
+.more-element h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+}
+#more-search {
+    width: 220px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#video-more {
+   display: inline-block;
+   width: auto;
+   height: 10%;
+   padding: 20% 0% 2%;
+   text-align: center;
+   font-family: Arial;
+}
+#Background {
+   display: inline-block;
+   width: auto;
+   height: 10%;
+   padding: 20% 0% 2%;
+   text-align: center;
+   font-family: Arial;
+}
+#Style {
+   display: inline-block;
+   width: auto;
+   height: 10%;
+   padding: 20% 0% 2%;
+   text-align: center;
+   font-family: Arial;
+}
+
+/* Style background feature */
+#colorRange h2{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+}
+#colorRange label{
+    color: white;
+    font-family: Arial;
+}
+
+.color-hex h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+}
+/* Style text feature */
+.text-element h3 {
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.text-element {
+    height: 1000px;
+}
+
+#heading-choice-one {
+    border: none;
+    border-radius: 5px;
+    background-color: #4B5B78;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: Arial;
+}
+
+#subheading-wrapper {
+    padding: 10px 0;
+}
+
+#subheading {
+    border: none;
+    border-radius: 5px;
+    background-color: #4B5B78;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: Arial;
+}
+
+#heading-choice-one h2, #subheading h3, #body-text h4 {
+    color: white;
+    font-size: 17px;
+    font-family: Arial;
+}
+
+#body-text {
+    border: none;
+    border-radius: 5px;
+    background-color: #4B5B78;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 10px; 
+    color: white;
+    font-family: Arial;
+}
+
+/* #sidebar-popout-text {
+    height: 660px;
+    width: 260px;
+} */
+
+#text-choice select {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    background-color: white;
+    font-family: Arial;
+}
+
+#text-size {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: Arial;
+}
+
+#font-text {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-family: Arial;
+}
+
+#font-size {
+    width: 65px;
+    height: 40px;
+    font-size: 15px;
+    font-family: Arial;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 20px;
+    border: 1px solid white;
+    color: white;
+}
+
+.column i {
+    font-size: 20px;
+    padding: 2px 5px;
+}
+
+.text-element-container {
+    display: flex;
+    border: 1px solid white;
+}
+
+#height-element {
+    width: 100px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 40px;
+}
+
+#height-element h4 {
+    position: relative;
+    top: -15px;
+    left: 15px;
+    color: white;
+    font-family: Arial;
+}
+
+#AV-element {
+    float: right;
+    position: relative; 
+    top: -52px;
+    width: 80px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 40px;
+}
+
+#AV-element h4 {
+    position: relative;
+    top: -15px;
+    left: 15px;
+    color: white;
+    font-family: Arial;
+}
+
+#height, #AV {
+    width: 30px;
+    height: 30px;
+}
+
+/* Style element element */
+#sidebar-popout-element {
+    height: 700px;
+}
+
+.element-element {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.element-element h3 {
+    color: white;
+    font-size: 17px; 
+}
+
+.heading-wrapper {
+    display: flex;
+}
+
+.heading-wrapper h5 {
+    position: relative;
+    left: 100px;
+    color: white;
+}
+
+#photo-see-all {
+    position: relative;
+    left: 150px;
+}
+
+#video-see-all {
+    position: relative; 
+    left: 150px;
+}
+
+#audio-see-all {
+    position: relative; 
+    left: 155px;
+}
+
+#line-shape {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#square-shape {
+    border: 1px solid white;
+    width: 30%;
+    height: 80px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#circle-shape {
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    width: 30%;
+    height: 80px;
+}
+
+#triangle-shape {
+    width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 50px solid white;
+}
+
+#photos-list {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    height: 50px;
+}
+
+#photos-list img {
+    padding: 0 5px 0 5px;
+}
+
+.videos-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+iframe {
+    width: 45%;
+    height: 80px;
+}
+
+.map-element, .upload-feature, .more-feature {
+    padding-left: 15px;
+    padding-right: 10px;
+    color: white;
+}
+
+#map-heading {
+    color: white;
+    font-size: 17px;
+}
+
+#big-map iframe {
+    width: 100%;
+    height: 200px;
+    padding: 10px 0;    
+    border-radius: 5px;
+}
+
+.small-map {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.small-map iframe {
+    width: 80px;
+    padding: 10px 10px 10px 10px;
+}
+
+#map-info {
+    color: black;
+}
+
+#map-info p {
+    position: relative; 
+    top: -15px;
+    padding: 5px 0;
+}
+
+#recent {
+    color: white;
+}
+
+.map-list {
+    padding-bottom: 15px;
+}
+
+/* Style all feature */
+.more-element {
+    width: 20px; 
+    height: 20px;
+}
+
+.template1, .template2, .template3 {
+    width: 220px;
+    height: 250px;
+    margin: 20px 0;
+    padding-bottom: 10px;
+}
+
+.sheet {
+    position: absolute; 
+    left: 500px;
+    top: 190px;
+}
+
+#home-page-body {
+    height: 50px;
+}
+
+/* Style the template 1 */
+#template-header {
+    padding-left: 50px;
+    padding-top: 20px;
+ }
+ 
+ #template {
+     font-family: arial;
+ }
+
+ #template-two {
+     padding-bottom: 20px;
+ }
+ 
+ #template-header {
+     border-bottom: 0.9px solid black;
+ }
+ 
+ #template-header h1 {
+     font-size: 35px;
+     font-weight: bold;
+     position: relative; 
+     top: -20px;
+ }
+ 
+ #template-job {
+     font-weight: bold;
+ }
+ 
+ #template-header p {
+     position: relative; 
+     top: -50px;
+     color: black;
+     padding: 20px 20px 0 0;
+ }
+ 
+ #template-bottom-header {
+     display: flex;
+     justify-content: space-evenly;
+     border-bottom: 0.9px solid black;
+ }
+ 
+ #template-sidebar {
+     background-color: #F5F5F5;
+     position: absolute;
+     left: 0;
+     height: 100%;
+     width: 300px;
+     color: black;
+     padding-top: 20px;
+ }
+ 
+ #template-contact, #template-education, #template-awards {
+     padding-left: 20px;
+ }
+ 
+ #template-skills {
+     display: flex;
+ }
+ 
+ #template-skills p {
+     border: none;
+     background-color: gray;
+     color: 	#D0D0D0;
+     border-radius: 2px;
+     padding: 5px;
+     width: 35px;
+ }
+ 
+ #template-education {
+     padding-bottom: 30px;
+ }
+ 
+ #template-education h3, #template-contact h3, #template-awards h3 {
+     font-size: 20px;
+     padding-bottom: 10px;
+     border-bottom: 1px solid gray;
+ }
+ 
+ .edu {
+     font-weight: bold;
+     padding-bottom: 10px;
+ }
+ 
+ .uni {
+     font-size: 13px;
+     padding-bottom: 10px;
+ }
+ 
+ .yr {
+     font-size: 11px;
+ }
+ 
+ .GPA {
+     float: right;
+     font-size: 11px;
+     position: relative;
+     top: -12px;
+     padding-right: 90px;
+ }
+ 
+ #main-template {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ #right-template {
+     position: relative;
+     left: 300px;
+     height: auto;
+     width: 500px;
+     color: black;
+     padding-top: 20px;
+     padding-left: 20px;
+ }
+ 
+ #right-template h3 {
+     font-size: 20px;
+     padding-bottom: 10px;
+ }
+ 
+ .position {
+     font-weight: bold;
+     font-size: 15px;
+ }
+ 
+ .yr2 {
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+ 
+ .position-description {
+     padding-left: 10px;
+     padding-bottom: 20px;
+     line-height: 20px;
+ 
+ }
+ 
+ .position-description li {
+     font-size: 14px;
+     padding: 5px 5px 5px 5px;
+ }
+
+ /* Style the template 2 */
+#template-header2 {
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    font-size: 25px;
+}
+
+#template-contact2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#template-contact2 p {
+    padding: 0 10px;
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+}
+
+#template-about2 {
+    font-size: 15px;
+    padding: 10px 40px 20px 40px;
+    text-align: justify;
+}
+
+.template-solid-line {
+    border: 0.5px solid black;
+    position: relative;
+    top: -20px;
+}
+
+.template-solid-line2 {
+    border: 0.5px solid black;
+    position: relative;
+    top: -2px;
+}
+
+.template-solid-line3 {
+    border: 0.5px solid black;
+    position: relative;
+    top: -5px;
+}
+
+.skills2 {
+    padding-top: 10px;
+}
+
+.edu2 {
+    padding-top: 10px;
+}
+
+#left-template {
+    width: 500px;
+    padding-left: 20px;;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 500px;
+    color: black;
+    padding-top: 15px;
+}
+
+#left-template h3, #right-template2 h3 {
+    font-size: 20px;
+}
+
+#right-template2 {
+    position: relative;
+    left: 500px;
+    height: auto;
+    width: 280px;
+    color: black;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#position-description2 {
+    padding-top: 10px;
+}
+
+/* Style template 4 */
+/**Add to page**/
+#template-header4 h1 {
+    font-size: 50px;
+    position: relative; 
+    left: 30px;
+}
+
+#template-left-side {
+    width: 300px;
+    padding-top: 20px;
+}
+
+#template-job4 {
+    position: relative; 
+    top: -50px;
+    left: 35px;
+    font-weight: bold;
+}
+
+#template-contact4 h3 {
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid black;
+}
+
+#template-contact4 p {
+    padding: 5px 0 0 10px;
+}
+
+#template-about4 {
+    text-align: justify;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    position: relative; 
+    top: -20px;
+}
+
+#template-education4 h3 {
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid black;
+}
+
+#template-education4 p {
+    padding-left: 10px; 
+}
+
+.GPA4 {
+    position: relative; 
+    left: 45px;
+}
+
+#template-skill4 h3, #template-awards4 h3 {
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid black;
+}
+
+.skill-list {
+    padding-left: 5px;
+}
+
+#template-right-side4 {
+    position: relative; 
+    top: 70px;
+}
+
+#template-right-side4 h1, #right-template4 h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#right-template4, #about-me-template, #template-about4 {
+    padding-left: 20px;
+}
+
+.position-description4 {
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.position4 {
+    padding-top: 20px;
+}
+ 
+/************************** Sign In Page *************************/
+
+/* Style the sign in body section */
+.login-body, .register-body {
+    background-color: #3982FA;
+}
+
+/* Style login body */
+.login-body {
+    padding: 0 0 0 0;
+}
+
+#register-header, #login-header {
+    background-color: white;
+}
+
+/* Style the form heading */
+.signIn-header {
+    line-height: 15px;
+    color: black;
+    text-align: center;
+}
+  
+/* Style the circle on Sign In Page */
+#circle-logo2 {
+    padding-left: 110px;
+}
+
+/* Style logo */
+.dots {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #3982FA;
+    width: 45px;
+    height: 45px;
+    margin: 15px 15px;
+}
+
+/* Style the form wrapper */
+.form-wrapper {
+    padding-top: 90px;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the whole form */
+#form {
+    border-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: white;
+    height: 430px;
+    width: 450px;
+    justify-content: center;
+    margin: 15px auto;
+    padding: 30px 40px;
+    float: left;
+}
+
+/* Style the entire form */
+.form-control {
+    padding-top: 5px;
+}
+
+/* Style the checkbox */
+.checkbox-form {
+    justify-content: center;
+    font-size: 13pt;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/* Style the input box: text */
+input[type = text], input[type = password] {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style sign in wrapper */
+.signin-wrapper {
+    padding-top: 15px;
+}
+
+/* Style the submit button */
+#signin {
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100px;
+    background-color: #3982FA;
+    color: white;
+}
+
+/* Style forgot username/password */
+#forgot-content {
+    padding-top: 10px;
+}
+
+/* Style forgot username/password */
+#forgot-account {
+    color: black;
+    text-decoration: none;
+    padding: 5px 0 5px 0;
+}
+
+/* Style forgot username/password hover effect */
+#forgot-account:hover {
+    color: #3982FA;
+}
+
+/* Style direct to user sign up */
+.direct-signUp {
+    float: right;
+}
+
+/* Style direct to user sign up */
+#direct-to-signup {
+    padding-top: 120px;
+}
+
+/* Style the sign up */
+.form2 {
+    text-align: center;
+}
+
+/* Style the submit button */
+#signup {
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100px;
+    background-color: #3982FA;
+    color: white;
+}
+
+/* Style the whole form */
+#form2 {
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #C4C4C4;
+    height: 430px;
+    width: 450px;
+    justify-content: center;
+    margin: 15px auto;
+    padding: 30px 40px;
+    float: left;
+}
+
+/* Media Queries for different pixel size on computer */
+@media only screen and (min-width: 1800px) and (max-width: 1920px) {
+
+    /* Style sign in body for different screen size */
+    #sign-in-body {
+        padding-left: 430px;
+        padding-right: 430px;
+    }
+}
+
+/************************** Sign Up Page *************************/
+
+/* Style the form heading */
+.signUp-header {
+    line-height: 15px;
+    color: black;
+}
+
+/* Stle sign up body*/
+.register-body {
+    padding: 0 0 0 0;
+}
+
+/* Style sign up title */
+#signup-title {
+    text-align: center;
+}
+
+/* Style the circle on Sign In Page */
+#circle-logo3 {
+    padding-left: 110px;
+  }
+  
+/* Style logo */
+.dots2 {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #3982FA;
+    width: 45px;
+    height: 45px;
+    margin: 15px 15px;
+}
+
+/* Style the form wrapper */
+.form-wrapper2 {
+    padding-top: 40px;
+}
+
+/* Style the whole form */
+#form3 {
+    border-radius: 25px;
+    background-color: white;
+    height: 550px;
+    width: 450px;
+    justify-content: center;
+    margin: 15px auto;
+    padding: 30px 40px;
+}
+
+/* Style the entire form */
+.form-control2 {
+    padding-top: 5px;
+}
+
+/* Style the checkbox */
+.checkbox-form {
+    justify-content: center;
+    font-size: 13pt;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/* Style the input box: text */
+input[type = text] {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the input box: password */
+input[type = password] {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+#signup {
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100px;
+    background-color: #3982FA;
+    color: white;
+}
+
+/* Style direct to login */
+#direct-to-login {
+    color: white;
+    text-align: center;
+}
+
+/* Style to login */
+#direct-to-login a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the hover effect */
+#direct-to-login a:hover {
+    color: #C4C4C4;
+}
+
+/* Completelly ignore all CSS */
+.ignore-css {
+    all: unset !important;
+}
+
+/************************** Setting Page *************************/
+
+/* Style setting page header */
+#setting-header {
+    height: 100px;
+}
+
+#setting-body {
+    height: 100px;
+}
+
+/* Style setting title */
+#setting h1 {
+    font-size: 40px;
+    padding-top: 80px;
+    padding-left: 300px;
+}
+
+/* Style setting main */
+#setting-main {
+    display: flex;
+    background-color: white;
+}
+
+/* Style setting navbar links */
+#setting-navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 200%;
+    margin-left: 280px;
+    padding: 0 30px 0 15px;
+    height: 30px;
+}
+
+/* Style the setting navbar hover effect */
+#setting-navbar a:hover {
+    border: 1px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #B5D1FF;
+}
+
+/* Style setting page */
+.setting-page {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+/* Style border setting page */
+.setting-wrapper {
+    border: 1px solid; 
+    border-color: #C5C5C5;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 500px;
+    height: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Style the heading 3 in account */
+.setting-wrapper h3 {
+    padding-left: 2px;
+}
+
+/* Style user photo */
+#user-photo {
+    width: 60px;
+	height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Style user profile picture */
+#user-photo img {
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Style input file */
+#user-edit-button input[type='file'] {
+    display: none;
+}
+
+/* Style remove button */
+#remove-button {
+    font-weight: bold;
+}
+
+/* Style account profile */
+#account-profile {
+    display: flex;
+}
+
+/* Style account setting border size */
+#account-setting {
+    height: 4250px;
+}
+
+/* Style user edit button */
+#user-edit-button {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+/* Style user edit button */
+#user-edit-button button {
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    color: #3982FA;
+    border-style: none;
+    background-color: white;
+    border: 1px #C4C4C4 solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Style remove button */
+.remove {
+    padding-left: 30px;
+}
+
+/* Style */
+.info {
+    display: flex;
+}
+
+/* Style input area */
+.info-input {
+    width: 225px;
+    padding-right: 50px;
+}
+
+/* Style datepicker */
+input [type = date] {
+    padding-left: 100px;
+}
+
+/* Style state selection */
+.select-option {
+    padding-top: 10px;
+}
+
+/* Style state selection */
+.info-input select {
+    width: 225px;
+    height: 45px;
+    border-color: #C4C4C4;
+    background-color: white;
+}
+
+/* Style textarea */
+.textarea-box {
+    padding-top: 10px;
+}
+
+/* Style the password box */
+#password-setting {
+    height: 460px;
+}
+
+/* Style save button */
+#save-button {
+    padding-top: 15px;
+}
+
+/* Style skill description */
+#skill-description, .accomplishment-description {
+    color: #BEBEBE;
+}
+
+/* Style solid line */
+.solid-line {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#solid-line {
+    padding-bottom: 20px;
+}
+
+/* Style solid line */
+.line {
+    border: 0.2px solid;
+    border-color: #C4C4C4;
+}
+
+/* Style solid line */
+#line {
+    padding-top: 60px;
+
+}
+
+/* Style solid line */
+#line3 {
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+/* Style solid line */
+#line2 {
+    padding-top: 20x;
+    padding-bottom: 20px;
+}
+
+/* Style label */
+label {
+    font-weight: bold;
+}
+
+/* Style link button */
+.link {
+    display: flex;
+}
+
+/* Style textarea */
+textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-color: #C4C4C4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Style save button */
+#save-button button {
+    background-color: #3982FA;
+    color: white;
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    border-style: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    float: right;
+}
+
+/* Style notification setting */
+#notification-setting {
+    height: 450px;
+}
+
+/* Style the border */
+.wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Style google logo */
+#google-logo img {
+    width: 40px;
+    height: 40px;
+    padding-right: 15px;
+}
+
+/* Style google link button */
+.connect-button {
+    padding-top: 10px;
+    padding-left: 230px;
+}
+
+/* Style google link button */
+.connect-button button {
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    color: #3982FA;
+    background-color: white;
+    border: 1px #C4C4C4 solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Style delete button */
+.delete {
+    display: flex;
+}
+
+/* Style delete button */
+.delete-button {
+    padding-left: 35px;
+}
+
+/* Style delete button */
+.delete-button button {
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    color: #3982FA;
+    background-color: white;
+    border: 1px #C4C4C4 solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Style paragraph in account */
+.describe {
+    color: #C4C4C4;
+}
+
+/* Style label */
+.notification {
+    font-weight: normal;
+}
+
+/* Style hide button */
+#hide-checkbox {
+    padding-left: 225px;
+}
+
+/************************** Support Page *************************/
+
+/* Style support page */
+#support {
+    background-color: #3982FA;
+    height: 350px;
+}
+
+/* Style support wrapper */
+.support-wrapper {
+    padding-top: 70px;
+}
+
+/* Style support heading */
+.support-wrapper h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+/* Style support search */
+#search-support input {
+    margin: 0 auto; 
+}
+
+/* Style support search bar */
+#support-search {
+    width: 50%;
+}
+
+/* Style support box */
+.support-container {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #D3D3D3;
+    height: 310px;
+}
+
+/* Style support box */
+.support-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Style support box choice */
+.box {
+    border: 1px;
+    padding: 10px 10px 10px 10px;
+    height: 310px;
+    width: 300px;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Style community and support image */
+#community-image, #manage-account-image, #support-form-image {
+    width: 170px;
+    height: 170px;
+}
+
+/* Style support form image */
+#support-form-image {
+    padding-top: 20px;
+}
+
+#paragraph {
+    padding-top: 20px;
+}
+
+/* Style the paragraph in support page */
+#paragraph p {
+    text-align: center;
+}
+
+/* Style heading for popular searches */
+.popular-search-section {
+    background-color: white;
+    height: 500px;
+}
+
+/* Style heading and description in popular search section */
+.heading-description {
+    text-align: center;
+}
+
+/************************** About Us Page *************************/
+
+/* Style about page top heading */
+#about-wrapper {
+    background-color: #3982FA;
+    width: 100%;
+    height: 465px;
+    margin: 0;
+    color: white;
+    padding-left: 500px;
+    font-size: 20px;
+}
+
+/* Style about body */
+#about-body {
+    padding: 0 0 150px 0;
+}
+
+/* Style the heading */
+#about-wrapper h1 {
+    margin: 0;
+    padding-top: 50px;
+}
+
+/* Style the paragraph */
+#about-wrapper p {
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 70px;
+}
+
+/* Style explantation section */
+#explantation {
+    text-align: center;
+    border: 1px solid;
+    margin: 30px 30px 30px 30px;
+    padding: 5px 0 5px 0;
+}
+
+/* Style explantation section */
+#explantation-one p {
+    color:#3982FA;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+/* Style explantation section */
+#explantation-two p  {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Style the team heading */
+#about-heading {
+    padding-left: 30px;
+}
+
+/* Style team wrapper */
+#team-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+/* Style team picture */
+.team-picture {
+    padding-left: 35px;
+    width: 80px;
+    height: 80px; 
+}
+
+/* Style team picture */
+.team-pic {
+    padding-right: 30px;
+}
+
+/* Style team members name and position */
+.team-name {
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Style team position */
+.team-name p {
+    font-size: 18px;
+}
+
+/* Style about page main section */
+#about-main {
+    background-color: white;
+}
+
+/* Style team member div */
+#team-member {
+    padding-top: 20px;
+    padding-bottom: 105px;
+}
+
+/************************** Profile Page *************************/
+
+/* Style main */
+#profile-main {
+    height: 100%;
+    margin: 0;
+    margin: 90px 200px 90px 200px;
+}
+
+/* Style profile info section */
+#profile-information {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 10px;
+    background-color: white;
+    height: 250px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .2);
+}
+
+/* Style profile body */
+#profile-page-body {
+    background-color: white;
+    padding: 0 0 150px 0;
+}
+
+/* Style profile wrapper */
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the profile image */
+#profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Style profile information */
+#profile-info {
+    padding-left: 80px;
+    font-size: 20px;
+}
+
+/* Style message button */
+#message-button button {
+    width: 80px;
+    height: 40px;
+    border: 1px #3982FA solid; 
+    border-radius: 10px;
+    background-color: #3982FA;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style user information */
+#user-information {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 20px;
+    margin-top: 50px;
+}
+
+/* Style profile solid line */
+.profile-solid {
+    border: 0.5px #C4C4C4 solid; 
+    margin: 0 20px;
+}
+
+/* Style profile line */
+#profile-solid {
+    margin: 0;
+}
+
+/* Style icons */
+.icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    font-size: 16px;
+}
+
+/* Style icon i */
+.icons i {
+    color: #3982FA;
+    margin-right: 15px;
+}
+
+/* Style the containers */
+.contact-container h1, .about-me-container h1, .skill-container h1, 
+.searches-container h1, .education-container h1, .job-container h1,
+.certification-container h1, .accomplishment-container h1 {
+    text-align: center;
+}
+
+/* Style user container */
+.contact-container, .social-media-container {
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .2);
+    height: 250px;
+}
+
+/* Style about me container */
+.about-me-container {
+    border: none;
+    border-radius: 5px;
+    height: 250px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .2);
+}
+
+/* Style user aboue me paragraph */
+#user-paragraph {
+    margin-left: 20px;
+}
+
+/* Style social media container */
+.social-media-container {
+    height: 200px;
+}
+
+/* Style user list */
+.other-user {
+    margin-left: 110px;
+}
+
+/* Style user list */
+.user-list {
+    display: flex;
+}
+
+/* Style user img */
+.user-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding-top: 5px;
+}
+
+/* Style user profile */
+.user-profile {
+    padding-left: 10px;
+}
+
+/* Style user profile heading */
+.user-profile h4 {
+    padding-top: 5px;
+}
+
+/* Style user profile paragraph */
+.user-profile p {
+    position: relative;
+    top: -18px;
+    font-size: 14px;
+    color: #C4C4C4;
+}
+
+/* Style the show more button */
+#show-more-button {
+    margin-top: 5px;
+    position: relative;
+    left: 150px;
+}
+
+/* Style the show more button */
+#show-more-button button {
+    border: none;
+    background-color: white;
+    color: #C4C4C4;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+/* Style education container */
+.education-container, .skill-container, .job-container, 
+.certification-container {
+    border: none;
+    border-radius: 5px;
+    height: 200px;
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .2);
+    margin-bottom: 50px;
+}
+
+/* Style education content */
+#education-content {
+    padding-left: 20px;
+}
+
+/* Style user degree, major, minor */ 
+#degree-major, #job-title, #award {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+/* Style skill container */
+.skill-container {
+    grid-column: 2 / -1;
+    width: 100%;
+    height: 210px;
+}
+
+/* Style search container */
+.searches-container {
+    grid-row: 2 / 5;
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .2);
+}
+
+/* Style job container */
+.job-container, .certification-container, .accomplishment-container {
+    grid-column: 2 / -1;
+}
+
+/* Style the paragraph */
+#job-title, #company-name, #award, #company, #issue-date,
+#course, #course-list, #languages, #language-list {
+    margin-left: 20px;
+}
+
+/* Style certification container */
+.certification-container {
+    border: none;
+    border-radius: 5px;
+    height: 200px;
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .2);
+}
+
+/* Style accomplishment container */
+.accomplishment-container {
+    border: none;
+    border-radius: 5px;
+    height: 200px;
+    box-shadow: 0 0 .5rem 0 rgba(0, 0, 0, .2);
+    height: 230px;
+}
+
+/* Style search container */
+.searches-container {
+    height: 495px;
+}
+
+.profile-footer, .about-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+/************************** Database Page *************************/
+
+/* Style the database main */
+.database-main {
+    padding: 20px 300px 100px 300px;
+    background-color: white;
+    height: 100%;
+}
+
+/* Style database body */
+.database-body {
+    padding: 0 0 0 0;
+}
+
+/* Style the database container */
+#database-container {
+    border: 1px #C4C4C4 solid;
+    border-radius: 5px;
+    height: 720px;
+}
+
+/* Style top database */
+#top-database {
+    padding: 20px 0 20px 20px;
+}
+
+/* Style database header */
+#database-header {
+    background-color: white;
+    border-bottom: 0.5px solid gray;
+}
+
+/* Style database button */
+.database-header button {
+    border: none;
+    background-color: white;
+    font-size: 15px;
+}
+
+/* Style the database header i */
+.database-header i {
+    font-size: 10px;
+    position: relative;
+    left: -7px;
+}
+
+/* Style databsae solid line */
+#database-solid {
+    border: 0.5px #C4C4C4 solid;
+}
+
+/* Style bottom database */
+#bottom-database, #more-filters, #database-results {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/* Style select option */
+#mile-choice {
+    padding-top: 10px;
+}
+
+/* Style select option */
+#miles-option {
+    height: 30px;
+    width: 60px;
+    border: 1px solid #C4C4C4;
+}
+
+/* Style bottom database input */
+#bottom-database input {
+    width: 200px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+#bottom-database {
+    position: relative; 
+    top: -10px;
+    padding-bottom: 10px;
+}
+
+/* Style database filter */
+#database-filter {
+    display: flex;
+}
+
+/* Style the database div */
+#database-div {
+    position: relative; 
+    left: 40px;
+    top: 10px;
+}
+
+/* Style the database search button */
+#database-search {
+    width: 60px;
+    height: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #C4C4C4;
+    border: none; 
+    border-radius: 5px;
+}
+
+/* Style the more filter content */
+#more-filters {
+    padding-bottom: 10px;
+}
+
+/* Style more filter button */
+#more-filters button, #filter button {
+    border: none; 
+    background: white;
+}
+
+/* Style the more filter i */
+#more-filters i {
+    font-size: 10px;
+    position: relative; 
+    left: -7px;
+}
+
+/* Style database results */
+#database-results {
+    padding-top: 10px;
+    display: flex;
+    padding-right: 10px;
+}
+
+/* Style filter section */
+#database-results p {
+    padding-top: 15px;
+}
+
+/* Style filter section */
+#filter {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+/* Style results of searches */
+.results {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Style location results */
+#locations {
+    padding-top: 20px;
+}
+
+/* Style favorites */
+#favorites {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style faovrite i */
+#favorites i, #database-filter i {
+    position: relative;
+    top: -0.5px;
+}
+
+#favorites i {
+    font-size: 20px;
+}
+
+/* Style faovrite p */
+#favorites p {
+    padding-left: 10px;
+}
+
+/* Style filter i */
+#filter i {
+    font-size: 10px;
+    position: relative;
+    left: -7px;
+}
+
+/* Style datbase profile */
+#database-profile {
+    width: 70px; 
+    height: 70px;
+    padding-top: 10px;
+}
+
+/* Style database degree major section */
+#database-degreeMajor {
+    position: relative;
+    top: -15px;
+}
+
+/* Add to database */
+.checkbox-dropdown {
+    width: 200px;
+    border: 1px solid #aaa;
+    padding: 10px;
+    position: relative;
+    margin: 0 auto;
+    user-select: none;
+}
+
+/* Changes to add to database css */
+.checkbox-dropdown {
+    width: 200px;
+    border: 1px solid #aaa;
+    padding: 10px;
+    position: relative;
+    margin: 0 auto;
+    user-select: none;
+}
+
+/* Display CSS arrow to the right of the dropdown text */
+.checkbox-dropdown:after {
+    content:'';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 6px solid white;
+    border-top-color: #000;
+    top: 50%;
+    right: 10px;
+    margin-top: -3px;
+}
+
+/* Reverse the CSS arrow when the dropdown is active */
+.checkbox-dropdown.is-active:after {
+    border-bottom-color: #000;
+    border-top-color: #fff;
+    margin-top: -9px;
+}
+
+.checkbox-dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%; 
+    border: inherit;
+    border-top: none;
+    left: -1px; 
+    right: -1px; 
+    opacity: 0;
+    height: 100px;
+    overflow: scroll;
+    overflow-x: hidden;
+    pointer-events: none; 
+}
+.is-active .checkbox-dropdown-list {
+    opacity: 1; 
+    pointer-events: auto;
+}
+
+.checkbox-dropdown-list li label {
+    display: block;
+    border-bottom: 1px solid silver;
+    padding: 10px;
+}
+
+.checkbox-dropdown-list li label:hover {
+    background-color: gray;
+    color: white;
+}
+
+/************************** Message Box *************************/
+
+/* Style message box */
+.message-container {
+    display: flex;
+}
+
+#message-main {
+    padding-top: 50px;
+}
+
+.message-box {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 350px;
+    height: auto;
+    margin-left: 20px;
+}
+
+#message-icon i {
+    float: right;
+    padding-right: 20px;
+    position: relative; 
+    top: -20px;
+}
+
+#top-message {
+    color: white;
+    padding: 10px 0;
+    background-color: #3982FA;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#top-message h3 {
+    padding: 0;
+    margin: 0;
+}
+
+#status {
+    font-size: 14px;
+    color: gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#message-search {
+    padding: 0 10px;
+    position: relative;
+    top: -30px;
+}
+
+#msg-search, #message-user {
+    background-color: white;
+}
+
+#message-user {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#message-search i {
+    position: relative; 
+    top: 34px;
+    left: 15px;
+    color: gray;
+}
+
+#message-search input {
+    padding-left: 40px;
+    height: 30px;
+}
+
+#message-user {
+    padding-top: 20px;
+}
+
+.user1 {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -20px;
+}
+
+.user1 img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+}
+
+.msg-name h3 {
+    position: relative;
+    top: -10px;
+}
+
+.msg-name p {
+    position: relative;
+    top: -20px;
+    font-size: 12px;
+    color: gray;
+}
+
+.date-status {
+    padding-top: 10px;
+}
+
+.date-status i {
+    color: #66FF00;
+    padding-top: 5px;
+    position: relative;
+    left: 25px;
+}
+
+#msg-box {
+    height: 400px;
+    background-color: white;
+}
+
+#send-message {
+    position: relative;
+    top: 305px;
+}
+
+#send-message input {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#msg-box {
+    background-color: white;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.dropdown-content i {
+    position: relative;
+    left: 15px;
+    padding-top: 31px;
+}
+
+#on-status {
+    color: #66FF00;
+}
+
+#distrub-status {
+    color: red;
+}
+
+#off-status {
+    color: gray;
+}
+
+.dropdown-content li {
+    list-style-type: none;
+    padding: 14px; 
+    font-size: 16px;
+}
+
+.dropdown-content li:hover {
+    background-color: #C4C4C4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
