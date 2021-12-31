@@ -6,6 +6,8 @@ Resume plus is a site that allows users to create, edit, and share unique resume
 
 This site was built using flask as the framework, and sqlite to create and manipulate the database.
 
+<img src = "https://github.com/jbosher1/Resume_Plus/blob/master/example.gif">
+
 Contributor's:
 - Josh Boshers - Backend, UI functionality
 - Timothy Cottrell - Backend, UI functionality
